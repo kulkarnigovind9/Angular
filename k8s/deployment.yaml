@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: turing-angular
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: turing-angular
+    spec:
+      containers:
+      - name: turing-angular
+        image: 321924370566.dkr.ecr.us-east-1.amazonaws.com/turing-angular:53
+        imagePullPolicy: Always
+        ports:
+        - name:  https-port
+          containerPort:  80
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 50m
+            memory: 50Mi
