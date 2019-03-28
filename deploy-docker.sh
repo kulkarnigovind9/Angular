@@ -4,11 +4,11 @@
 #    * angular/cli (to install run: `npm install -g @angular/cli`)
 
 #install packages, need to run one time, onwards we can comment this line
-# npm install
+npm install
 #Run test cases, commenting it as there are some random failures for tests which need to be fixed
 #ng test
 #Build the app 
-# ng build --prod
+ng build --prod
 IMAGE_NAME="turing-angular"
 #build docker image
 docker build -t $IMAGE_NAME .

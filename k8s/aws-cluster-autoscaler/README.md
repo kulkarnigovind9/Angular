@@ -1,1 +1,0 @@
-This chart will ahndle the AWS nodes autoscaling
